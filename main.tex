@@ -1,0 +1,129 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{lmodern}
+%-----------------------------------------------------------
+\usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+\hspace{0.3cm}\\[-0.2cm]
+
+%== HEADER ==%
+\begin{center}      
+    {\fontsize{16}{16}\selectfont Abhilash Venkatesh} \\ 
+     (Alias Name: Abhilash V) \\
+     Bengaluru, Karnataka, India \quad 
+    \href {https://github.com/abhi4578}{Github}| \href {https://www.linkedin.com/in/abhi5782-/}{Linkedin} | \href {https://scholar.google.com/citations?user=8K_E_9EAAAAJ&hl=en}{Google Scholar} |
+    \href{https://abhi4578.github.io}{Website}
+    % You can also put your LinkedIn or website address
+   % {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/}{linkedin.com/in/username}
+\end{center}
+
+\subsection*{Education}
+
+\textbf{\href{https://omscs.gatech.edu/}{Georgia Institute of Technology}}\\
+\textit{ Online /  Jan 2025 - Present} \\
+Masters in Computer Science  \\
+\newline
+\textbf{\href{https://nitk.ac.in}{National Institute of Technology Karnataka, Surathkal}}\\
+\textit{Mangalore, Karnataka, India / July 2016 - June 2020} \\
+Bachelor of Technology in Information Technology  \\
+\textbf{CGPA 9.08/10.0} 
+
+
+\subsection*{Technical Leadership Work Experience} 
+\textbf{Lead Engineer, Foundation for Science, Innovation and Development (FSID),\href{https://dataforpublicgood.org.in/}{Centre of Data for Public Good (CDPG)} (Formerly IUDX Programme Unit)} \\
+\textit{Indian Institute of Science (IISc) campus, Bengaluru, Karnataka / April 2023 - January 2025} 
+\begin{itemize}
+\item Led Data Privacy research systems team in integrating SMPC based framework \href{https://carbynestack.io/}{Carbyne Stack} offline phase into SGX based TEE to accelerate offline phase 
+\item Trained, delegated, and guided the DevOps team of five members on end-to-end Docker and Kubernetes (K8s) based  Data Exchange deployment.
+
+\item Supervised the team of 3-5 members to the execution of two significant platform deployment migrations - updating the K8s platform and dataset ID migration with careful planning and testing resulting in at most half-day downtime.
+\item Co-developed screening tests, assignment,and hired three candidates out of more than twenty candidates for DevOps role, 
+\end{itemize}
+\subsection*{Technical Work Experience}
+\textbf{Senior Software Engineer, SID,  \href{https://iudx.org.in}{India Urban Data Exchange (IUDX) Programme Unit}} \\
+\textit{IISc campus, Bengaluru, Karnataka / April 2022- March 2023} 
+\begin{itemize}
+\item Designed and implemented cloud cobhst optimization in AWS cloud, reducing the cost by 40\%.
+\item  Proactively secured the platform during CVEs, especially Log4j2-shell attack, introduced secure coding practices through OpenSSF badge and operational security through strong passwords, two-factor \& hardened K8s clusters.
+\end{itemize}
+\textbf{Software Engineer, SID,  IUDX Programme Unit} \\
+\textit{IISc campus, Bengaluru, Karnataka / July 2020- March 2022} 
+\begin{itemize} 
+\item Orchestrated Docker Swarm deployment of IUDX platform and infrastructure automation using Ansible.  
+\item Researched and implemented clustering of databases and backend API servers using Kubernetes(K8s) in AWS and scaled to handle 1000 concurrent users.
+\item Led a team of two members to deploy and support the end-to-end platform for external partners in the partner's own Azure K8s as a Service (AKS) environment. 
+\end{itemize}
+
+
+\subsection*{Research Experience}
+\textbf{Part-Time Systems Engineer, SID,  R\&D IUDX Programme Unit \& FSID, CDPG} \\
+\textit{Under \href{https://anshootandon.github.io/profile/}{Dr. Anshoo Tandon}, IISc campus, Bengaluru, Karnataka / March 2022 - March 2024}
+
+\begin{itemize}
+\item The YoLov5 Object Detection application is integrated into the system to run in SGX and AMD-based Trusted Execution environments (TEEs) with remote attestation flow and the Data Exchange system.
+\item Designed, implemented and supported Secure Multi-Party Computing (SMPC) to run each party on different cloud providers, AWS and Azure, using docker containers. The experimental setup enabled \href{https://ieeexplore.ieee.org/document/10427509/}{memory optimization and scalability of neural network inference.}
+\end{itemize}
+\textbf {Summer Research Internship and Major Project} \\
+\textit{Under \href{https://www.hesge.ch/hepia/annuaire/florent-gluck}{Prof. Florent Gluck}, HEPIA, Geneva; \href{https://infotech.nitk.ac.in/faculty/jaidhar-c-d}{Associate Prof. Jaidhar C.D}, NITK / May 2019 - June 2020}
+\begin{itemize} 
+     \item Worked on project titled \href{https://gitlab.com/remote-os-Image-clone-deployment}{Remote Operating System Image Clone Management (ROSIM)}. We used PXE technology, bash scripting ,  GRUB and a tiny Linux kernel built using Buildroot to remotely install/image OS to desktop computers over LAN. 
+   \item Designed and implemented optimized OS imaging through caching, multicasting, and existing OS imaging.
+	\item Developed Web-based management interface using Python-based Django framework for ease of OS image management.
+\end{itemize}
+\subsection*{Projects}
+\textbf{\href{https://nitkit-vgst727-nppsa.nitk.ac.in/}{Protein Sequence Analyzer - Web Application}}  \\
+  \textit{Under  \href{https://infotech.nitk.ac.in/faculty/nagamma-patil}{Associate Prof. Nagamma Patil}, NITK, Mangalore, Karnataka / Sept 2019 - March 2020}  
+	\begin{itemize}\itemsep \isep                  
+    \item Designed and implemented the protein tool hosting using NGINX, Gunicorn, Postgres, systemd services on the Ubuntu server.
+	\item Security against DoS/DDoS attacks achieved through NGINX rate limiting and Google CAPTCHA.
+	\end{itemize}
+\subsection*{Skills}
+\begin{itemize}
+\item  \textbf{Language \& Frameworks:} Bash (5 years), Python (3 years) - Django, Java (2 years) - Vert.x, C (2 years).
+\item \textbf{Technologies:} Git, Linux, Ansible, Cloud (AWS, Azure), Containers, Docker Swarm, K8s,
+NGINX.
+\item \textbf{Databases:} Elasticsearch, Postgres, Redis, immudb.
+\item \textbf{Security and Privacy:} API, Software and Operational Security, PETs - TEEs, SMPC 
+\item  \textbf{Project management:} Github projects, Mattermost Open Source Software Development
+\item \textbf{Certifications:} \href{https://www.linkedin.com/in/abhi5782-/details/certifications/}{The Kubernetes Crusade: Workshop on Defending and Attacking Kubernetes}, \href{https://elearn.nptel.ac.in/Ecertificate/?q=NPWS22369227122778}{Demystifying JWT, OAuth \& OIDC, NPTEL Workshop}, \href {https://www.youracclaim.com/badges/848a4c99-ab00-449f-afed-59bc88c6a0cd/linked_in_profile}{Google IT Support Professional Certificate}, \href{https://www.credly.com/badges/c2fbeef3-6d43-4213-af28-0f68dedd3334/linked_in_profile}{LFD103: A Beginner's Guide to Linux Kernel Development, Linux Foundation}, \href{https://www.coursera.org/account/accomplishments/certificate/TE3G9PXUEUTR}{Open Source Software Development Methods} 
+\item \textbf{Workshop and Presentations:} Smart City Stack and DevOps - \href{https://icdds.org/smartcity.html}{ICDDS, NITK, 2023}, \href{https://edu.ieee.org/in-cucs/events/smart-city-stack-and-devops/}{CHRIST University}
+\end{itemize}
+
+
+\end{document}
+
